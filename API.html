@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./WhetherAPI/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Weather Api</h1>
+        </div>
+        <div class="input">
+            <input type="text" id="location" placeholder="Location">
+            <input type="button" value="Get" id="btn">
+        </div>
+        <div class="info">
+            <img src="data:image/jpeg;base64,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" alt="not found">
+            <div class="temperature">
+                <span class="temp" id="temp">25</span>
+                <span class="degree">&deg;</span>
+                <span id="c">C</span>
+            </div>
+            <div class="description" id="description">Cloudy</div>
+            <div class="location" id="location-description">Hyderabad</div>
+            
+        </div>
+    </div>
+    
+    <script src="./WhetherAPI/Script.js"></script>
+</body>
+</html>
